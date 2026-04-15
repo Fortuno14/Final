@@ -246,13 +246,34 @@ footer{
 /* Carousel */
 
 #bnr-carousel{
-    margin-bottom: 50px;
+    max-width: 900px;
+    margin: 20px auto 50px auto;
 }
 
 .carousel-item {
     text-align: center;
     background-color: #1C3D5A;
-    height: 400px;
+    height: 300px;
+    padding:50px 50px;
+    border-radius: 40px;
+}
+
+.carousel-item h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Bentham',serif;
+    color: #DBB858;
+    margin-top: 30px;
+}
+
+.hero-btn{
+    font-weight: bold;
+    background-color: #DBB858;
+    color: #1C3D5A;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    
 }
 
 .latest-news, .upcg-evets {
@@ -421,6 +442,32 @@ font-weight: bold;
         font-size: 14px;
     }
 
+
+    /*homepage */
+
+     /*carousel */
+     .carousel-item {
+        height: 250px;
+        padding:  30px 15px;
+     }
+
+     .carousel-item h1 {
+        font-size:30px;
+     }
+
+      .carousel-control-next-icon,.carousel-control-prev-icon{
+        padding: 16px;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width:15%;
+    }
+
+    .hero-btn {
+        padding: 8px 14px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
 
   
 }
