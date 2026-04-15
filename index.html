@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macon County</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<!--header-->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/seal.png" alt="Macon County Seal">
+                <div class="logo-text">
+                    <span>Macon</span>
+                    <span>County</span>
+                </div>
+        
+            </a>
+        </div>
+<!-- link from Lesson 7  https://blog.logrocket.com/create-responsive-mobile-menu-css-without-javascript/  -->
+        <input type="checkbox" id="side-mob-nav" class="side-mob-nav">
+        <label for="side-mob-nav" class="hamb">
+            <span class="hamb-line"></span> Menu
+        </label>
+
+        <nav>
+            <ul class="main-nav">
+
+                <li class="dropdown">
+                    <a href="services.html">Services</a>
+                    <!--  https://blog.logrocket.com/create-responsive-mobile-menu-css-without-javascript/ -->
+
+                    
+                    
+                    <input type="checkbox" id="service-toggle" class="dropdown-submenu">
+                    <label for="service-toggle" class="dropdown-btn">+</label>
+                    <ul class="submenu">
+                        <li><a href="#">Permits &amp; Applications</a></li>
+                        <li><a href="#">Forms &amp; Document Downloads</a></li>
+                        <li><a href="#">Pay Taxes and Property</a></li>
+                        <li><a href="#">Public Records</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                        <li><a href="#">Request Service</a></li>
+                    </ul>
+                </li>
+            
+                <li class="dropdown">
+                    <a href="departments.html">Departments</a>
+                    <input type="checkbox" id="departments-toggle" class="dropdown-submenu">
+                    <label for="departments-toggle" class="dropdown-btn">+</label>
+                    <ul class="submenu">
+                        <li><a href="#">Government</a></li>
+                        <li><a href="#">Health &amp; Social Services</a></li>
+                        <li><a href="publicsafety.html">Public Safety</a></li>
+                        <li><a href="#">Planning &amp; Zoning</a></li>
+                        <li><a href="#">Public Works</a></li>
+                        <li><a href="#">Parks &amp; Rec</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown">
+                    <a href="community.html">Community</a>
+                    <input type="checkbox" id="community-toggle" class="dropdown-submenu">
+                    <label for="community-toggle" class="dropdown-btn">+</label>
+                    <ul class="submenu">
+                        <li><a href="#">Community Resources</a></li>
+                        <li><a href="#">Schools &amp; Education</a></li>
+                        <li><a href="#">Housing &amp; Assistance</a></li>
+                        <li><a href="#">Transportation</a></li>
+                        <li><a href="#">Utility &amp; Recycle</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="business.html">Business</a>
+                    <input type="checkbox" id="business-toggle" class="dropdown-submenu">
+                    <label for="business-toggle" class="dropdown-btn">+</label>
+                    <ul class="submenu">
+                        <li><a href="#">Starting a Business</a></li>
+                        <li><a href="#">Permits &amp; Licensing</a></li>
+                        <li><a href="#">Bussiness Tax Information</a></li>
+                        <li><a href="#">Econmic Development</a></li>
+                    </ul>
+                </li>
+
+
+            <li class="dropdown">
+                <a href="news.html">News</a>
+                <input type="checkbox" id="news-toggle" class="dropdown-submenu">
+                    <label for="news-toggle" class="dropdown-btn">+</label>
+                <ul class="submenu">
+                    <li><a href="#">County News</a></li>
+                    <li><a href="#">Events Calendar</a></li>
+                    <li><a href="#">Updates &amp; Alerts</a></li>
+                    <li><a href="#">Public Notices</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+
+        <!-- Area for bootstrap carousel-->
+
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h1>Welcome to Macon County</h1>
+      <a href="services.html" class="hero-btn">Explore Services</a>
+    </div>
+
+    <div class="carousel-item">
+      <h1>Title</h1>
+    </div>
+
+
+   <div class="carousel-item">
+      <h1>Title</h1>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+        <!-- Area for bootstrap cards (I WANT TO...) section-->
+
+        <section class="quick-links">
+            <h2>I Want To...</h2>
+
+
+            <div class="container">
+                <div class="row justify-content-center">
+
+                <div class="col-3">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn">Go</a>
+            </div>
+            </div>
+            </div>
+
+
+                <div class="col-3">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn">Go</a>
+            </div>
+            </div>
+            </div>
+
+             <div class="col-3">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn">Go</a>
+            </div>
+            </div>
+            </div>
+
+             <div class="col-3">
+                <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <a href="#" class="btn">Go</a>
+            </div>
+            </div>
+            </div>
+
+            </div>
+        </div>
+
+        </section>
+
+        <!-- Latest News section-->
+         <section class="latest-news">
+            <h2>Latest News</h2>
+            <div class="latest-news-cont">
+                <img src="#" alt="#" class="latest-news-img"> <!--fill in later-->
+
+                <div class="news-links">
+                    <ul>
+                    <li><a href="#">Blank</a></li>
+                        <li><a href="#">Blank</a></li>
+                        <li><a href="#">Blank</a></li>
+                        <li><a href="#">Blank</a></li>
+                    </ul>
+
+                    <a href="news.html" class="news-btn">View All News</a>
+            </div>
+            </div>
+         </section>
+
+        <!-- Upcoming events secrtion-->
+         <section class="upcg-evets">
+            <h2>Upcoming Events</h2>
+            <div class="upcg-evets-cont">
+                <div class="evnts-links">
+                    <ul>
+                        <li><a href="#">Blank</a></li>
+                        <li><a href="#">Blank</a></li>
+                        <li><a href="#">Blank</a></li>
+                        <li><a href="#">Blank</a></li>
+
+                    </ul>
+                    <a href="#" class="evnts-btn">View All Events</a>
+                </div>
+                <img src="#" alt="#" class="upcg-evets-img">
+            </div>
+         </section>
+    </main>
+
+
+
+  <!--Footer-->
+    <footer>
+        <div class="footer-info">
+        <div class="footer-left"> <!--fill in later-->
+            <p>Macon County, NC</p>
+            <p>ADDRESS</p>
+            <p>PHONE #</p>
+        </div>
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="images/seal.png" alt="Macon County Seal">
+                    <div class="footer-logo-text">
+                        <span>Macon</span>
+                        <span>County</span>
+                    </div>
+                </a>
+            </div>
+            <div class="footer-right">
+                <a href="#">Facebook</a><!--fill in later-->
+                <a href="#">Instagram</a>
+                <a href="#">Youtube</a>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>     
+</body>
+
+
+</html>
+

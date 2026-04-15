@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Safety</title>
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!--header-->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/seal.png" alt="Macon County Seal">
+                <div class="logo-text">
+                    <span>Macon</span>
+                    <span>County</span>
+                </div>
+        
+            </a>
+        </div>
+<!--Helpful link from Lesson 7  https://blog.logrocket.com/create-responsive-mobile-menu-css-without-javascript/ creates toggle for mobile menu   -->
+        <input type="checkbox" id="side-mob-nav" class="side-mob-nav">
+        <label for="side-mob-nav" class="hamb">
+            <span class="hamb-line"></span> Menu
+        </label>
+
+        <nav>
+            <ul class="main-nav">
+
+                <li class="dropdown">
+                    <a href="services.html">Services</a>
+                    <!--Helpful link Lesson 7  https://blog.logrocket.com/create-responsive-mobile-menu-css-without-javascript/  (same for all sections)  creates toggle for sub menut-->
+
+                    <input type="checkbox" id="service-toggle" class="dropdown-submenu">
+                    <label for="service-toggle" class="dropdown-btn">+</label> <!--fixes issue of mobile menue secion clicks, plus sign dropsdown submenu on mobile -->
+                    <ul class="submenu">
+                        <li><a href="#">Permits &amp; Applications</a></li>
+                        <li><a href="#">Forms &amp; Document Downloads</a></li>
+                        <li><a href="#">Pay Taxes and Property</a></li>
+                        <li><a href="#">Public Records</a></li>
+                        <li><a href="#">Report Issue</a></li>
+                        <li><a href="#">Request Service</a></li>
+                    </ul>
+                </li>
+            
+                <li class="dropdown">
+                    <a href="departments.html">Departments</a>
+                    <input type="checkbox" id="departments-toggle" class="dropdown-submenu">
+                    <label for="departments-toggle" class="dropdown-btn">+</label>
+                    <ul class="submenu">
+                        <li><a href="#">Government</a></li>
+                        <li><a href="#">Health &amp; Social Services</a></li>
+                        <li><a href="publicsafety.html">Public Safety</a></li>
+                        <li><a href="#">Planning &amp; Zoning</a></li>
+                        <li><a href="#">Public Works</a></li>
+                        <li><a href="#">Parks &amp; Rec</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="community.html">Community</a>
+                    <input type="checkbox" id="community-toggle" class="dropdown-submenu">
+                    <label for="community-toggle" class="dropdown-btn">+</label>
+                    <ul class="submenu">
+                        <li><a href="#">Community Resources</a></li>
+                        <li><a href="#">Schools &amp; Education</a></li>
+                        <li><a href="#">Housing &amp; Assistance</a></li>
+                        <li><a href="#">Transportation</a></li>
+                        <li><a href="#">Utility &amp; Recycle</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="business.html">Business</a>
+                    <input type="checkbox" id="business-toggle" class="dropdown-submenu">
+                    <label for="business-toggle" class="dropdown-btn">+</label>
+                    <ul class="submenu">
+                        <li><a href="#">Starting a Business</a></li>
+                        <li><a href="#">Permits &amp; Licensing</a></li>
+                        <li><a href="#">Bussiness Tax Information</a></li>
+                        <li><a href="#">Econmic Development</a></li>
+                    </ul>
+                </li>
+
+
+            <li class="dropdown">
+                <a href="news.html">News</a>
+                <input type="checkbox" id="news-toggle" class="dropdown-submenu">
+                    <label for="news-toggle" class="dropdown-btn">+</label>
+                <ul class="submenu">
+                    <li><a href="#">County News</a></li>
+                    <li><a href="#">Events Calendar</a></li>
+                    <li><a href="#">Updates &amp; Alerts</a></li>
+                    <li><a href="#">Public Notices</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+    </header>
+
+    <!--Main content-->
+    <main>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-info">
+
+        <div class="footer-left">
+            <p>Macon County, NC</p>
+            <p>ADDRESS</p>
+            <p>PHONE #</p>
+        </div>
+
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="images/seal.png" alt="Macon County Seal">
+                    <div class="footer-logo-text">
+                        <span>Macon</span>
+                        <span>County</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="footer-right">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Youtube</a>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+
+
+</html>
+

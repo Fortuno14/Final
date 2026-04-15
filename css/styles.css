@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+html, body{
+    height: 100%;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #E1E3E0;
+}
+
+/* header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 20px;
+    background-color: #174539;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.95;
+}
+
+.logo-text span {
+    font-family: 'Bentham',serif;
+    font-size: 50px;
+    color: #E1E3E0;
+}
+
+
+/* Navigation */
+
+nav{
+    align-self: flex-end;
+    margin-bottom: 8px;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-family: 'Bentham',serif;
+}
+
+.main-nav > li {
+    position: relative;
+}
+
+.main-nav >li >a {
+    color:#E1E3E0;
+    font-size: 30px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.main-nav >li >a:hover{
+    color: #DBB858;
+    border-bottom: 2px solid #DBB858;
+}
+
+.submenu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #174539;
+    min-width: 240px;
+    padding: 15px 0;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #E1E3E0;
+    font-size: 20px;
+    font-family: 'Bentham', serif;
+}
+
+.submenu li a:hover {
+    background-color: #174539;
+    color: #DBB858;
+}
+
+.dropdown-submenu {
+    display: none;
+}
+
+.dropdown:hover .submenu{
+    display: block;
+}
+
+.dropdown-btn {
+    display: none;
+}
+
+/*hamburger*/
+
+.side-mob-nav {
+    display: none;
+}
+
+.hamb {
+    display: none;
+    cursor: pointer;
+    color: #E1E3E0;
+    font-size: 1.3rem;
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #174539;
+    border-top: 1px solid;
+}
+
+.hamb-line {
+    background: #E1E3E0;
+    display: inline-block;
+    height: 3px;
+    width: 24px;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.hamb-line::before,.hamb-line::after{
+    content: "";
+    background: #E1E3E0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.hamb-line::before{
+    top: 7px;
+}
+
+.hamb-line::after{
+    top: -7px;
+}
+
+/*links*/
+a {
+    text-decoration: none;
+}
+
+/* main*/
+main {
+    padding: 40px;
+    flex: 1;
+}
+
+/*Footer*/
+footer{
+    background-color: #174539;
+    padding: 40px 30px;
+    margin-top: 60px;
+    border-top: 1px solid #ccc;
+    color: #E1E3E0;
+}
+
+.footer-info{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-left p {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-logo a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo img {
+    height: 70px;
+}
+
+.footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    color: #E1E3E0;
+}
+
+.footer-logo-text span {
+    font-family: 'Bentham', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right a {
+    margin-left: 10px;
+    color: #E1E3E0;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/*        Homepage           */
+
+.latest-news, .upcg-evets {
+    padding: 50px 20px;
+}
+
+.latest-news h2, .upcg-evets h2, .quick-links h2{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: 'Bentham, serif';
+
+}
+
+.latest-news-cont, .upcg-evets-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.latest-news-img, .upcg-evets-img{
+    border: 3px solid #174539;
+    width: 300px;
+    height:300px;
+    border-radius: 10px;
+    margin-top: 30px;
+
+}
+
+.news-links ul, .evnts-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.news-links li, .evnts-links li {
+    margin-bottom: 10px;
+}
+
+.news-links a, .evnts-links a {
+font-weight: bold;
+}
+
+
+
+.news-btn, .evnts-btn{
+    display: inline-block;
+    margin-top: 70px;
+    background-color: #174539;
+    color: #DBB858;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 4px;
+
+}
+
+
+
+
+/*small screens*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 10px;
+        gap: 10px;
+    }
+
+    .logo {
+        align-self: center;
+    }
+
+    .logo img{
+        height: 70px;
+    }
+
+    .logo-text span {
+        font-size: 36px;
+    }
+
+    .hamb {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        margin-bottom: 0;
+        align-self: stretch;
+    }
+
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #174539;
+        gap: 0;
+    }
+
+    .side-mob-nav:checked+ .hamb+ nav .main-nav {
+        display: flex;
+    }
+
+    .main-nav >li {
+        width: 100%S;
+    }
+
+
+    .main-nav > li > a {
+        font-size: 20px;
+        display: block;
+        padding: 14px 15px;
+
+    }
+
+    .main-nav >li>a:hover{
+        border-bottom: none;
+        background-color: #174539;
+    }
+
+    .dropdown-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #E1E3E0;
+        font-size: 24px;
+        line-height: 1;
+        padding: 14px 18px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .submenu {
+        display: none;
+        position: static;
+        min-width: 100%;
+        padding: 0;
+        background-color: #1d5a4a;
+
+    }
+
+    .submenu li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+
+    .footer-logo img{
+        height: 55px;
+    }
+    
+    .footer-logo-text span{
+        font-size: 24px;
+    }
+
+    .footer-left p{
+        font-size: 14px;
+    }
+
+    .footer-right a{
+        font-size: 14px;
+    }
+
+
+  
+}
+
