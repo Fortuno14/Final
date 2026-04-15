@@ -102,7 +102,6 @@ nav{
 }
 
 .submenu li a:hover {
-    background-color: #174539;
     color: #DBB858;
 }
 
@@ -243,6 +242,19 @@ footer{
 
 /*        Homepage           */
 
+
+/* Carousel */
+
+#bnr-carousel{
+    margin-bottom: 50px;
+}
+
+.carousel-item {
+    text-align: center;
+    background-color: #1C3D5A;
+    height: 400px;
+}
+
 .latest-news, .upcg-evets {
     padding: 50px 20px;
 }
@@ -251,7 +263,7 @@ footer{
     text-align: center;
     font-size: 25px;
     margin-bottom: 10px;
-    font-family: 'Bentham, serif';
+    font-family: 'Bentham', serif;
 
 }
 
