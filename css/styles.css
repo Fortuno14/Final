@@ -276,15 +276,52 @@ footer{
     
 }
 
+
+/*I want to section cards */
+
+.quick-links{
+    margin-bottom: 50px;
+}
+
+.quick-links .card{
+  text-align: center;
+  margin: 10px 0;
+  height: 100px;
+  background-color: #174539;
+}
+
+.quick-links .card-title{
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #E1E3E0;
+}
+
+
+
+.quick-links .btn {
+    background-color: #DBB858;
+    color: #174539;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 4px;
+    padding: 6px 15px;
+}
+
+
+
+
 .latest-news, .upcg-evets {
     padding: 50px 20px;
 }
 
 .latest-news h2, .upcg-evets h2, .quick-links h2{
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 10px;
     font-family: 'Bentham', serif;
+    font-weight: bold;
+    margin-bottom: 20px;
 
 }
 
@@ -468,6 +505,35 @@ font-weight: bold;
         font-size: 14px;
         margin-top: 20px;
     }
+
+    .latest-news-cont,
+    .upcg-evets-cont {
+    flex-direction: column;
+    text-align: center;
+    }
+
+.latest-news-img,
+.upcg-evets-img {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 50%;
+
+}
+
+.news-links,
+.evnts-links {
+    margin-top: 20px;
+}
+
+.news-btn,
+.evnts-btn {
+    margin-top: 20px;
+}
+
+.upcg-evets-cont {
+    flex-direction: column-reverse;
+}
 
   
 }
