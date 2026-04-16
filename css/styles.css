@@ -386,6 +386,7 @@ font-weight: bold;
     gap:30px;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: flex-start;
 }
 
 
@@ -400,6 +401,8 @@ font-weight: bold;
     min-height:230px;
     padding:20px 15px;
     border-radius:20px;
+    position: sticky;
+    top: 120px;
     
 }
 
