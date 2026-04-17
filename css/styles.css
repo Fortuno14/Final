@@ -683,10 +683,53 @@ font-weight: bold;
 
 /* innerpage  pages */
 
+.toc-sidenav, .bnr-img{
+    display: none;
+}
+
+.bnr-container{
+    margin-bottom: 30px;
+    display: block;
+}
+
+.inr-layout{
+    display: block;
+    padding: 0 30px;
+}
+
+.bnr-txt {
+    width:90% ;
+    height: 190px;
+    border-radius: 0 40px 40px 0;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.info-row img {
+    width: 90%;
+    margin-top: 35px;
+}
+
+.inr-main h2 {
+    text-align: center;
+}
+
+.help-links {
+    width: 100%;
+    margin-top: 50px;
+}
 
 
 
-    }
+
+
+
+
+
+}
 
 
 
