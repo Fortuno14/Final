@@ -202,6 +202,14 @@ footer{
     text-align: left;
 }
 
+.footer-left a {
+    color: #E1E3E0;
+}
+
+.footer-left a:hover {
+    color: #DBB858;
+}
+
 .footer-logo a {
     display: flex;
     align-items: center;
@@ -276,10 +284,16 @@ footer{
 
 .carousel-item h1 {
     font-size: 50px;
-    margin-bottom: 20px;
-    font-family: 'Bentham',serif;
+    font-family: 'Bentham', serif;
     color: #DBB858;
-    margin-top: 30px;
+}
+
+.carousel-caption {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 20px;
+    bottom: 30%;
 }
 
 
@@ -322,7 +336,7 @@ footer{
 
 .quick-links .btn {
     background-color: #DBB858;
-    color: #174539;
+    color: #0b2e4a;
     font-size: 14px;
     font-weight: bold;
     margin-top: 4px;
@@ -373,8 +387,9 @@ footer{
     margin-bottom: 10px;
 }
 
-.news-links a, .evnts-links a {
-font-weight: bold;
+.news-links li a, .evnts-links li a {
+    color: #0b2e4a;
+    font-weight: bold;
 }
 
 
@@ -592,7 +607,7 @@ border: 3px solid #1C3D5A;
 
 .inr-main p, .inr-main li{
 
-    line-height: 1 .8;
+    line-height: 1.8;
 }
 
 .inr-main ul {
@@ -754,7 +769,7 @@ border: 3px solid #1C3D5A;
     }
 
     .main-nav >li {
-        width: 100%S;
+        width: 100%;
     }
 
 
@@ -872,9 +887,11 @@ border: 3px solid #1C3D5A;
 
 .latest-news-img,
 .upcg-evets-img {
-    width: 400px;
-    height: 300px;
-    margin-top: 20px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 20px auto; 
+    display: block;
     border-radius: 20px;
 
 }
@@ -929,7 +946,7 @@ border: 3px solid #1C3D5A;
 }
 
 .faq {
-    padding-left: 30px ;
+    padding: 0 30px;
 }
 
 .faq h3 {
@@ -952,6 +969,10 @@ border: 3px solid #1C3D5A;
 .bnr-container, .sec-bnr-container{
     margin-bottom: 30px;
     display: block;
+}
+
+.sec-bnr-txt {
+    padding: 20px 25px;
 }
 
 .inr-layout{
@@ -986,8 +1007,10 @@ border: 3px solid #1C3D5A;
 
 
 .alrt-box{
+    display: grid;              
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: center;    
+    margin: 20px 30px; 
 }
 
 /*Ft highlight*/
