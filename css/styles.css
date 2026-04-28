@@ -11,10 +11,10 @@ html, body{
 
 
 body {
-    font-family: 'Lato', sans-serif;
     display: flex;
     flex-direction: column;
     background-color: #E1E3E0;
+    font-family: 'Lato', sans-serif;
 }
 
 /* header*/
@@ -27,6 +27,8 @@ header {
     gap: 20px;
     background-color: #174539;
 }
+
+/*Logo words and image alignment at top */
 
 .logo a {
     display: flex;
@@ -129,7 +131,6 @@ nav{
     cursor: pointer;
     color: #E1E3E0;
     font-size: 1.3rem;
-    font-family: 'Lato',sans-serif;
     font-weight: 700;
     width: 100%;
     padding: 12px 15px;
@@ -187,7 +188,7 @@ footer{
 .footer-info{
     max-width: 1200px;
     margin: 0 auto;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -294,6 +295,7 @@ footer{
     padding: 15px;
     border-radius: 20px;
     bottom: 30%;
+     font-family: 'Bentham', serif;
 }
 
 
@@ -345,7 +347,7 @@ footer{
 
 
 
-
+/*Latest news and upcoming events section on HP*/
 .latest-news, .upcg-evets {
     padding: 50px 20px;
 }
@@ -390,6 +392,10 @@ footer{
 .news-links li a, .evnts-links li a {
     color: #0b2e4a;
     font-weight: bold;
+}
+
+.news-links li a:hover, .evnts-links li a:hover{
+    text-decoration: underline;
 }
 
 
@@ -461,7 +467,7 @@ footer{
 
 
 
-/*FAQ section */ 
+/*FAQ section on main section pages */ 
 
 .faq {
     padding-top: 40px;
@@ -488,7 +494,7 @@ footer{
 }
 
 
-/* innerpage  pages */
+/* banner from section and inner pages */
 
 .bnr-txt, .sec-bnr-txt{
     color: #DBB858;
@@ -518,6 +524,10 @@ border: 3px solid #1C3D5A;
 
 }
 
+
+/* image adjustments for some section images */
+
+
 .bus-img {
     object-position: 50% 65%;
 }
@@ -530,6 +540,7 @@ border: 3px solid #1C3D5A;
    object-position: 50% 35% 
 }
 
+
 .inr-page-bnr, .sec-bnr {
     padding: 10px 0;
 }
@@ -537,6 +548,9 @@ border: 3px solid #1C3D5A;
 .bnr-txt {
     background-color: #174539;
 }
+
+
+/* inner page Public safety */
 
 .inr-layout {
     display: grid;
@@ -606,8 +620,11 @@ border: 3px solid #1C3D5A;
 }
 
 .inr-main p, .inr-main li{
-
     line-height: 1.8;
+}
+
+.inr-main p {
+    margin-bottom: 8px;
 }
 
 .inr-main ul {
@@ -631,6 +648,28 @@ border: 3px solid #1C3D5A;
     border-radius:20px;
      border: 3px solid #174539;
 }
+
+.info-row p {
+    margin-bottom: 15px;
+}
+
+.info-row ul{
+    margin-top: 10px;
+}
+
+.info-row ul li {
+    margin-bottom: 8px;
+}
+
+.info-row ul li a, .emergency-cont ul li a{
+    color:#0b2e4a
+}
+
+.info-row ul li a:hover, .emergency-cont ul li a:hover{
+    text-decoration: underline;
+}
+
+/* alert for news section*/
 
 .alrt{
     max-width: 500px;
@@ -672,7 +711,7 @@ border: 3px solid #1C3D5A;
 }
 
 
-/*Ft highlight*/
+/*Ft highlight in main section pages*/
 
 .top-feat {
     display: grid;
